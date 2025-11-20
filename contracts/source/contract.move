@@ -1,3 +1,10 @@
+
+  
+  // ( theres a key point for frontend rem ankit )
+
+
+
+
 module ghostcontext::ghostcontext {
     use sui::object::{Self, UID};
     use sui::transfer;
@@ -86,7 +93,7 @@ module ghostcontext::ghostcontext {
         transfer::share_object(registry);
     }
 
-    // ========== Core Functions ==========
+    //  Core Functions
 
     /// 1. Create and share a new context
     public entry fun create_context(
@@ -241,7 +248,7 @@ module ghostcontext::ghostcontext {
         });
     }
 
-    // ========== View Functions ==========
+    // View Functions 
 
     public fun is_listed(nft: &ContextNFT): bool {
         nft.is_listed
